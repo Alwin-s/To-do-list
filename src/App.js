@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Todo from "./Todo"
 function App() {
+  const arr=[{
+    id:1,
+    name:"Alwin"
+  },
+  {
+    id:2,
+    name:"Aln"
+  }
+,
+{
+  id:3,
+  name:"An"
+}
+,{
+  id:4,
+  name:"Alwi"
+}]
+
+const index=arr.findIndex((item)=>item.id === 22)
+console.log(index);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Todo/>
+    
     </div>
   );
 }
